@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #ffd8cc, #d8acbd, #aacbd6, #b0e9dc);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+}
+
+.card-container-main {
+    width: 1500px !important;
+}
+.weather-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-header {
+    font-size: 35px;
+    font-family: "Nanum Gothic", sans-serif;
+    margin: 20px;
+    color: #212121;
+    font-weight: 600;
+}
+
+.weather-card-child {
+    font-family: "Nanum Gothic", sans-serif !important;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.icon-container {
+    position: relative;
+    right: -30px;
+}
+.forecast-card {
+    border-top: 4px solid #155a53 !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+.temp-desc {
+    text-transform: capitalize;
+    font-family: "Nanum Gothic", sans-serif !important;
+}
+
+.weather-card-main {
+    width: 400px !important;
+    border-top: 5px solid #082e2a !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    animation: gradient 8s ease infinite !important;
+}
+
+.forecast-header {
+    font-family: "Nanum Gothic", sans-serif !important;
+}
+
+.forecast-date {
+    font-family: "Nanum Gothic", sans-serif !important;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+.input-box {
+    width: 700px !important;
+    font-family: "Nanum Gothic", sans-serif !important;
+}
+
+.search-stuff {
+    display: flex;
+    align-items: row;
+}
+
+.search-button {
+    background-color: rgba(92, 98, 98, 0.15) !important;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%);
+}
+
+.weather-card-main {
+    width: 400px !important;
+    border-top: 5px solid #082e2a !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.forecast-card {
+    border-top: 4px solid #155a53 !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.main-temperature {
+    font-family: "Nanum Gothic", sans-serif !important;
+    font-size: large !important;
+}
+
+.weather-card-main:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+}
+.forecast-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
